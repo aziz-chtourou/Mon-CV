@@ -1,0 +1,142 @@
+/* --- Configuration générale --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #4682B4;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #ffdd57;
+}
+
+/* --- En-tête --- */
+.header {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    color: #175485;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #175485;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;  
+}
+
+/* --- Section Compétences --- */
+.skills {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+.language-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.language-box {
+    width: 45%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- Section Compétences --- */
+.language-box img {
+    width: 100px;  /*  meme largeur fixe pour toutes les images */
+    height: 100px; /* meme hauteur pour toutes les images  */
+    object-fit: cover; /* Permet de maintenir les proportions sans déformation */
+    margin-bottom: 10px;
+}
+
+
+.language-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #4682B4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive design --- */
+/* option pour s'adapter avec tous types d'ecran et ajustement */ 
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 15px;
+    }
+
+    .language-box {
+        width: 100%;
+    }
+
+    .language-box img {
+        max-width: 80px;
+    }
+
+    .language-box p {
+        font-size: 0.9rem;
+    }
+}

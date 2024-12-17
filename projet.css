@@ -1,0 +1,141 @@
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #4682B4;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #ffdd57;
+}
+
+/* --- Section des compétences --- */
+.skills {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-in-out; /* Animation fadeIn ajoutée ici */
+}
+
+/* ce qui concerne le nom des projets */
+.skills strong {
+    color: #175485;
+    font-size: 1.1rem;
+}
+
+/* --- Animation pour le tableau --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: slideIn 1s ease-in-out; /* Animation slideIn ajoutée ici */
+    justify-content: center;
+    align-items: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* background en tete tableaux */ 
+th {
+    background-color: #4682B4;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* --- Animations --- */
+
+/* Animation fadeIn - Fait apparaître un élément progressivement en augmentant son opacité de 0 à 1  (container )*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Début : élément invisible */
+    }
+    to {
+        opacity: 1; /* Fin : élément complètement visible */
+    }
+}
+
+
+
+/* Animation slideIn - Fait glisser un élément depuis la gauche (hors écran) jusqu'à sa position finale ( tab dans container ) */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%); /* Début : élément hors de l'écran à gauche */
+    }
+    to {
+        transform: translateX(0); /* Fin : élément à sa position normale */
+    }
+}
+
+
+
+/* --- Footer--- */
+.footer {
+    background-color: #4682B4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* les titres */
+h1 {
+    text-align: center;
+    color: #175485;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,389 @@
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* En-têtes (h1, h2, h3) */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #4682B4;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #ffdd57;
+}
+
+/* --- Header (Image de couverture et photo de profil) --- */
+.header {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+/* Image de couverture */
+.cover-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-image {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Photo de profil */
+.profile-container {
+    position: absolute;
+    top: 180px;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+}
+
+.photo-profil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid #264966;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+/* --- Section "À Propos" --- */
+.about {
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.about hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ddd;
+}
+
+/* --- Section "Éducation" --- */
+.education {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.education li i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #007BFF;
+}
+
+.education li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.education li h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.education li p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --- Section "Formations" --- */
+.formations {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.formations li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.formations li i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #007BFF;
+}
+
+.formations li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formations li h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.formations li p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --- Section "Clubs" --- */
+.clubs {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clubs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.clubs li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.clubs li i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #007BFF;
+}
+
+.clubs li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.clubs li h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.clubs li p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --- Section "Langues" --- */
+.langues {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.langues ul {
+    list-style: none;
+    padding: 0;
+}
+
+.langue-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.langue-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.langue-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* --- Section "Loisirs" --- */
+.loisirs {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loisirs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.loisir-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.loisir-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #007BFF;
+}
+
+.loisir-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* --- Section "Profils en ligne" --- */
+.profils-en-ligne {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profils-en-ligne ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profils-en-ligne li {
+    margin-bottom: 10px;
+}
+
+.profils-en-ligne a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.profils-en-ligne a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #4682B4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Liens professionnels --- */
+.profils-en-ligne a {
+    color: rgba(19, 17, 17, 0.615);
+    text-decoration: none;
+    position: relative;
+}
+
+.profils-en-ligne a:hover {
+    color: #0647ea;
+    text-decoration: underline;
+}
+
+.profils-en-ligne a::after {
+    content: attr(data-content);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 10;
+}
+
+.profils-en-ligne a:hover::after {
+    display: block;
+}

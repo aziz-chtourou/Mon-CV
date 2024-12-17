@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <!-- wrapper englobe tous le continue de la page : structurer la mise en page / contrôler plusieurs éléments  au meme temps  -->
+    <div class="wrapper">
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i>Accueil</a>
+            <a href="diplome.html"><i class="fas fa-graduation-cap"></i> Diplômes</a>
+            <a href="competences.html"><i class="fas fa-laptop-code"></i> Compétences informatiques</a>
+            <a href="projet.html"><i class="fas fa-project-diagram"></i> Projets réalisés</a>
+            <a href="stages.html"><i class="fas fa-briefcase"></i> Stages</a>
+            <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+            <a href="contact.html"><i class="fas fa-phone"></i>Contactez-moi</a>
+        </nav>
+      
+
+        <main>
+            <div class="container">
+                <div id="form-container">
+                    <h2>Veuillez remplir ce formulaire avant de passer au quiz</h2>
+                    <form id="user-form">
+                        <div class="form-group">
+                            <label for="nom">Nom <span class="required">*</span> :</label>
+                            <input type="text" id="nom" name="nom" class="form-control" placeholder="Entrez votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom <span class="required">*</span> :</label>
+                            <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Entrez votre prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Sexe <span class="required">*</span> :</label>
+                            <div class="form-check-inline">
+                                <input type="radio" id="homme" name="sexe" value="Homme" class="form-check-input" required>
+                                <label for="homme" class="form-check-label">Homme</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" id="femme" name="sexe" value="Femme" class="form-check-input" required>
+                                <label for="femme" class="form-check-label">Femme</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="etablissement">Établissement de travail <span class="required">*</span> :</label>
+                            <input type="text" id="etablissement" name="etablissement" class="form-control" placeholder="Entrez votre établissement de travail" required>
+                        </div>
+                        <button type="submit" class="btn start-quiz-btn">Commencer le quiz</button>
+                    </form>
+                </div>
+                <div id="quiz-container" style="display: none;">
+                    <div id="timer">Temps restant : <span id="time">225</span> secondes <i class="fas fa-clock"></i></div>
+                    <div id="question-container"></div>
+                    <div class="button-container">
+                        <button onclick="nextQuestion()" class="next-question-btn">Suivant</button>
+                    </div>
+                </div>
+                <div id="result-container" style="display: none;">
+                    <h2>Résultat final</h2>
+                    <p>Votre score sera affiché ici.</p>
+                    <button id="restart-btn" onclick="restartQuiz()" class="next-question-btn">Restart</button>
+                </div>
+                <div id="consultants-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Contactez-moi :</p>
+        <p><i class="fas fa-phone"></i> Numéro de téléphone : 29 579 776</p>
+        <p><i class="fas fa-map-marker-alt"></i> Adresse : <a href="https://www.google.com/maps/place/Sakiet+Ezzit+Route+de+Tunis+Sfax" target="_blank" data-content="Adresse">Sakiet Ezzit Route de Tunis Sfax</a></p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

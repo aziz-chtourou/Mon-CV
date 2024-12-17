@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-moi</title>
+    <!-- Font Awesome : pour afficher les fas-fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i>Accueil</a>
+        <a href="diplome.html"><i class="fas fa-graduation-cap"></i> Diplômes</a>
+        <a href="competences.html"><i class="fas fa-laptop-code"></i> Compétences informatiques</a>
+        <a href="projet.html"><i class="fas fa-project-diagram"></i> Projets réalisés</a>
+        <a href="stages.html"><i class="fas fa-briefcase"></i> Stages</a>
+        <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+        <a href="contact.html"><i class="fas fa-phone"></i>Contactez-moi</a>
+    </nav>
+
+    <div class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Entrons en contact</h3>
+                <p class="text">Vous pouvez me contacter via les coordonnées et liens suivants</p>
+                <div class="info">
+                    <p><i class="fas fa-phone"></i> Numéro de téléphone : 29 579 776</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Adresse : 
+                        <a href="https://www.google.com/maps/place/Sakiet+Ezzit+Route+de+Tunis+Sfax" target="_blank">Sakiet Ezzit Route de Tunis Sfax</a>
+                    </p>
+                    <a href="mailto:azizchtourou330@gmail.com"><i class="fas fa-envelope"></i> azizchtourou330@gmail.com</a>
+                </div>
+                <div class="social-media">
+                    <h3>Liens professionnels :</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/aziz-chtourou" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/mohamed-aziz-chtourou/?originalSubdomain=tn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm" autocomplete="off">
+                    <h3 class="title">Contactez-moi</h3>
+
+                    
+                    <div class="input-container">
+                      <!--  required : pour l'obligation de remplir les champs de texte -->
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" class="input" placeholder="Votre nom" required />
+                    </div>
+
+
+                    <div class="input-container">
+                        <label for="prénom">Prénom</label>
+                        <input type="text" name="prénom" class="input" placeholder="Votre prénom" required />
+                    </div>
+
+
+                    <div class="input-container">
+                     <!--  required : pour l'obligation de remplir les champs de texte / type="email" oblige la forme d'un email -->  
+                        <label for="email">Email</label>
+                        <input type="email" name="email" class="input" placeholder="Votre email" required />
+                    </div>
+
+
+                    <div class="input-container">
+                        <label for="sujet">Sujet</label>
+                        <input type="text" name="sujet" class="input" placeholder="Votre sujet" required />
+                    </div>
+
+
+                     <!--  champs de texte : texte area -->
+                    <div class="input-container textarea">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="input" placeholder="Votre message" required></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Tous les droits réservés &copy; Mr Mhamed Aziz Chtourou</p>
+    </footer>
+
+</body>
+</html>

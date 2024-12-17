@@ -1,0 +1,298 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #4682B4; /* Couleur de fond de la barre de navigation */
+    width: 100%; /* La barre occupe toute la largeur de la page */
+    text-align: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; /* Couleur du texte des liens */
+    margin: 0 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #ffdd57; /* Couleur du texte au survol */
+}
+
+/* Conteneurs */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4682B4;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="radio"] {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+/* Boutons */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.start-quiz-btn {
+    background-color: #4682B4;
+    color: white;
+}
+
+button.start-quiz-btn:hover {
+    background-color: #5a9bd4;
+}
+
+
+/* Minuteur */
+#timer {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #d9534f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4682B4;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Wrapper */
+.wrapper {
+    flex: 1;
+}
+
+/* --- Barre de navigation --- */
+.navbar {
+    background-color: #4682B4; 
+    width: 100%; 
+    text-align: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; 
+    margin: 0 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 8px;
+}
+
+.navbar a:hover {
+    color: #ffdd57; 
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-check-inline {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+/* Bouton personnalisé */
+button.start-quiz-btn {
+    background-color: #4682B4; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; 
+}
+
+button.start-quiz-btn:hover {
+    background-color: #007bff; 
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #4682B4; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0; 
+    width: 100%; 
+    margin-top: auto; 
+}
+
+.footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline; 
+}
+
+/* Conteneur des questions */
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question-container {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem; 
+    text-align: left; 
+}
+
+.question input[type="radio"] {
+    margin-right: 10px;
+    margin-left: 10; 
+}
+
+.question label {
+    margin-left: 0px; 
+}
+
+/* bouton suivant*/ 
+.button-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+button.next-question-btn {
+    background-color: #4682B4; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.next-question-btn:hover {
+    background-color: #007bff; /* Couleur de fond au survol */
+}
+
